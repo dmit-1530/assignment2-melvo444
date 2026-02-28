@@ -1,0 +1,199 @@
+:root {
+    --white: #fff;
+    --black: #000;
+    --red: #BD3A5A;
+    --off-white: #F8FAFC;
+    --blue: #005A8F;
+    --navy: #002439;
+    --hover: #84283F;
+}
+
+/* utilities & containers */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F1F5F9;
+}
+
+.inner-container {
+    max-width: 81.875rem;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    gap: 2.125rem;
+}
+
+/* global typography */
+h1 {
+    font-size: 4.5rem;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+/* header and footer */
+header {
+    padding: 1rem 2rem;
+    background-color: var(--white);
+}
+
+header .inner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.875rem;
+    font-size: 1.25rem;
+}
+
+header ul a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+header button {
+    background-color: var(--red);
+    border: none;
+    color: var(--off-white);
+    padding: 0.75rem 1rem;
+}
+
+header a:hover {
+    text-decoration: underline var(--red);
+}
+
+header button:hover {
+    background-color: var(--hover);
+}
+
+footer {
+    padding: 3.375rem;
+    background-color: var(--navy);
+    color: var(--off-white);
+}
+
+footer .inner-container {
+    padding: 0 5.5rem;
+}
+
+footer p, footer cite {
+    width: 34.375rem;
+}
+
+
+/* banner */
+.banner {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blue);
+    color: var(--off-white);
+    padding: 5.0625rem 6.3125rem;
+}
+
+.banner .flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.banner p {
+    font-size: 2.25rem;
+    line-height: 1.5;
+}
+
+.banner a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: var(--off-white);
+    border: 1px solid var(--off-white);
+    padding: .75rem 1rem;
+    margin-top: 1.6875rem;
+    display: inline-block;
+}
+
+.banner a:hover {
+    color: var(--blue);
+    background-color: var(--off-white);
+}
+
+/* main content*/
+.body {
+    margin: 5.0625rem auto 1.6875rem auto;
+}
+
+.text-container {
+    padding: 1.6875rem;
+}
+
+.main-content section {
+    background-color: var(--white);
+    margin-bottom: 3.375rem;
+}
+
+.main-content a {
+    color: var(--red);
+    font-size: 1.375rem;
+    font-weight: 700;
+    padding-right: 1.6875rem;
+}
+
+.main-content a:hover {
+    color: var(--hover);
+}
+
+.main-content section p {
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+.main-content .game-night {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-content .game-night div {
+    width: 31.1875rem;
+}
+
+.main-content .game-night a {
+    width: 17.1875rem;
+    text-align: center;
+}
+
+/* newest games */
+aside {
+    background-color: var(--white);
+    width: 25.875rem;
+    padding: 1.6875rem;
+    text-align: center;
+    align-self: flex-start;
+}
+
+aside ul {
+    margin-top: 3.375rem;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.375rem;
+}
+
+aside li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
